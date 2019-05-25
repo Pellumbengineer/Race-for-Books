@@ -8,3 +8,13 @@ Each student needs to read all of the 6 books to complete his/her term project.
 ## Evaluation
 
 Below I have discribed the project.
+
+![Screenshot from 2019-05-25 14-17-33](https://user-images.githubusercontent.com/26312757/58368634-28064700-7ef8-11e9-9d43-9e8449332a9c.png)
+
+So to make the three Librarians to work at the same time I have used Threads and also while the student is reading the book we dont want the librarian to wait untill the student returns the book.
+
+
+
+![Screenshot from 2019-05-25 14-17-49](https://user-images.githubusercontent.com/26312757/58368636-2b99ce00-7ef8-11e9-8d3b-d56f1c826d1c.png)
+
+I used blocking queue to synchronize threads. Blocking Queue supports flow control by introducing blocking if either Blocking Queue is full or empty. A thread trying to put an element in a full queue is blocked until some other thread takes an elemnt from the  queue, either by taking one or more element or clearing the queue completely. Similarly it blocks a thread trying to delete from an empty queue until some other treads puts an item.
